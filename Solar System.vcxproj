@@ -20,7 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\glad.c" />
+    <ClCompile Include="src\Input Processing\input.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Windowing\windowing.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Input Processing\input.hpp" />
+    <ClInclude Include="src\Windowing\windowing.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

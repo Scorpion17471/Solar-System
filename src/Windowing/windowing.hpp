@@ -1,8 +1,8 @@
 // Copyright 2025 Ajay Alamuri
 
 #pragma once
-#ifndef WINDOWING_H
-#define WINDOWING_H
+#ifndef WINDOWING_HPP
+#define WINDOWING_HPP
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -17,4 +17,4 @@ private:
 	static void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 };
 
-#endif WINDOWING_H
+#endif WINDOWING_HPP

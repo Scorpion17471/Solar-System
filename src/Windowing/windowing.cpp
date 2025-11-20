@@ -1,5 +1,6 @@
 // Copyright 2025 Ajay Alamuri
 
+#include "../Input Processing/input.hpp"
 #include "windowing.hpp"
 
 GLFWwindow* Windowing::initializeWindowingSystem(int width, int height, std::string title)
@@ -38,6 +39,9 @@ GLFWwindow* Windowing::initializeWindowingSystem(int width, int height, std::str
 
 	// Set the framebuffer size callback to adjust viewport on window resize
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+
+	// Set key callback for input processing
+	glfwSetKeyCallback(window, Inputs::processInput);
 
 	return window;
 }
